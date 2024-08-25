@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="16dp">
+
+                    <ImageButton
+                        android:id="@+id/btn_kembali"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:adjustViewBounds="true"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_arrow_left"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Edit Profile"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageView546"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/photo_profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@id/header"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16dp"
+                    android:backgroundTint="#fff"
+                    app:cardCornerRadius="75dp">
+
+                    <ImageView
+                        android:id="@+id/imageView_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="TODO"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_person"
+                        tools:ignore="UseAppTint" />
+                </androidx.cardview.widget.CardView>
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                    <Button
+                        android:id="@+id/btn_pilih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Pilih Foto" />
+
+                </TableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Nama"
+                    android:textColor="@color/obsidian"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etProfile_nama"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:paddingStart="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/custom_edittext"
+                    android:ems="10"
+                    android:hint="Masukan Nama Anda"
+                    android:inputType="text"
+                    android:textSize="16sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/textView116"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="NIK"
+                    android:textColor="@color/obsidian"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etProfile_nik"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:paddingStart="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/custom_edittext"
+                    android:ems="10"
+                    android:hint="Masukan NIK Anda"
+                    android:inputType="text"
+                    android:textSize="16sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Nomer Telepon"
+                    android:textColor="@color/obsidian"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etProfile_notelp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:paddingStart="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/custom_edittext"
+                    android:ems="10"
+                    android:hint="Masukan Nomer Telepon Anda"
+                    android:inputType="text"
+                    android:textSize="16sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Alamat"
+                    android:textColor="@color/obsidian"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etProfile_alamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:paddingStart="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/custom_edittext"
+                    android:ems="10"
+                    android:hint="Masukan Alamat Anda"
+                    android:inputType="text"
+                    android:textSize="16sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Kota"
+                    android:textColor="@color/obsidian"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etProfile_kota"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:paddingStart="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/custom_edittext"
+                    android:ems="10"
+                    android:hint="Masukan Kota Anda"
+                    android:inputType="text"
+                    android:textSize="16sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Provinsi"
+                    android:textColor="@color/obsidian"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etProfile_provinsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:paddingStart="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/custom_edittext"
+                    android:ems="10"
+                    android:hint="Masukan Provinsi Anda"
+                    android:inputType="text"
+                    android:textSize="16sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Kode Pos"
+                    android:textColor="@color/obsidian"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etProfile_kodepos"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:paddingStart="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/custom_edittext"
+                    android:ems="10"
+                    android:hint="Masukan Kode Pos Anda"
+                    android:inputType="text"
+                    android:textSize="16sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+
+                    <Button
+                        android:id="@+id/btnProfile_submit"
+                        style="@style/FillButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:backgroundTint="#2A3568"
+                        android:text="Simpan" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

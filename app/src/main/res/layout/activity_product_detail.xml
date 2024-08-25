@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="15dp">
+
+                    <ImageButton
+                        android:id="@+id/btn_kembali"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:adjustViewBounds="true"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_arrow_left" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Detail Product"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageView546"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView_product"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/uniqlo_flannel_kemeja" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="20dp"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="15dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_harga"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Rp250.000"
+                                android:textColor="@color/lava_black"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_stok"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:paddingVertical="2dp"
+                                android:paddingHorizontal="16dp"
+                                android:gravity="end"
+                                android:background="@drawable/badge_pending"
+                                android:backgroundTint="@color/secondary"
+                                android:text="STOK : 1"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_judul"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="DS COMPANY Open Collar Shirt Pink"
+                            android:textColor="@color/obsidian"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_pengunjung"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Produk ini telah dilihat 10 kali"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:paddingVertical="15dp"
+                        android:paddingHorizontal="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@color/obsidian"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:text="Ukuran" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/small"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/badge_tidak_terpilih"
+                                android:paddingVertical="5dp"
+                                android:paddingHorizontal="15dp"
+                                android:layout_marginEnd="10dp"
+                                android:text="S"
+                                android:textColor="#AAAAAA"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/medium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/badge_tidak_terpilih"
+                                android:paddingVertical="5dp"
+                                android:paddingHorizontal="15dp"
+                                android:layout_marginEnd="10dp"
+                                android:text="M"
+                                android:textColor="#AAAAAA"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/large"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/badge_tidak_terpilih"
+                                android:paddingVertical="5dp"
+                                android:paddingHorizontal="15dp"
+                                android:layout_marginEnd="10dp"
+                                android:text="L"
+                                android:textColor="#AAAAAA"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/extra_large"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/badge_tidak_terpilih"
+                                android:paddingVertical="5dp"
+                                android:paddingHorizontal="15dp"
+                                android:text="XL"
+                                android:textColor="#AAAAAA"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:paddingHorizontal="20dp"
+                        android:paddingVertical="15dp">
+
+                        <TextView
+                            android:id="@+id/textView15602"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Detail Produk"
+                            android:textColor="@color/obsidian"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5dp">
+
+                            <TextView
+                                android:id="@+id/textView945"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+                                android:text="Kategori"
+                                android:textColor="@color/obsidian"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/dsfg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/obsidian"
+                                android:text=": "
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/tv_kategori"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/lava_black"
+                                android:text="Hoodie"
+                                android:textSize="14sp" />
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:paddingHorizontal="20dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="30dp">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/textView154602"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Deskripsi Produk"
+                                android:textColor="@color/obsidian"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_deskripsi"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_span="1"
+                                android:layout_weight="1"
+                                android:textColor="@color/lava_black"
+                                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dictum mauris nisi. Pellentesque mollis turpis rutrum massa posuere, sed vestibulum."
+                                android:textSize="14sp" />
+                        </TableRow>
+
+                    </TableLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btn_cart"
+            style="@style/FillButton"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="20dp"
+            android:text="Tambahkan Ke Keranjang" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
